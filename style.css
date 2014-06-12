@@ -1,0 +1,14 @@
+body
+{
+
+}
+
+#canvas
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 18px;
+	border: 1px solid #333;
+}
