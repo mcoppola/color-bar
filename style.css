@@ -1,0 +1,29 @@
+body
+{
+}
+p
+{
+	width: 80%;
+	margin: 0 auto;
+	line-height: 1.5em;
+}
+#colorBar
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100vh;
+
+	overflow: hidden;
+
+	background-color: #dc0e68;
+}
+.color-panel
+{
+	display: inline-block;
+
+    -webkit-transition: background-color 2s linear, width 5s ease-in;
+    transition: background-color 2s linear, width 5s ease-in;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+	<title>color bar css</title>
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  	<div id="colorBar" class="color-bar-container"></div>
+
+	<script src="utils.js"></script>
+	<script src="colorPanels.js"></script>
+
+	<script>
+	window.onload = function () {
+		var colorBar = document.getElementById('colorBar');
+		console.log(colorBar);
+		var colors = new ColorPanels(colorBar, colorBar.offsetWidth, colorBar.offsetHeight);
+
+		window.addEventListener('keypress', function (e) {
+		  // d
+		  console.log(e.keyCode);
+		  if (e.keyCode == 100) {
+		  		console.log("in here dummy");
+			  colors.flipColors(-1);
+		  }
+		  // f
+		  else if (e.keyCode == 102) {
+			  colors.flipColors(1);
+		  }
+		}, false);
+
+		colors.flipColors(1);
+		setInterval(function(){
+			colors.flipColors(1);
+		}, 500);
+
+	};
+
+	</script>
+</body>
+</html>
