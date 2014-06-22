@@ -1,5 +1,7 @@
 body
 {
+	margin: 0;
+	max-width: 100%;
 }
 p
 {
@@ -12,9 +14,10 @@ p
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 1;
 
 	width: 100%;
-	height: 100vh;
+	height: 30px;
 
 	overflow: hidden;
 
@@ -26,4 +29,30 @@ p
 
     -webkit-transition: background-color 2s linear, width 5s ease-in;
     transition: background-color 2s linear, width 5s ease-in;
+}
+
+.color-block
+{
+	display: block;
+	position: relative;
+	left: 0;
+	width: auto;
+	height: 400px;
+	color: white;
+	font-size: 2em;
+	line-height: 1.5em;
+	padding: 4em;
+	/*border: 4px solid white;*/
+}
+.bg-purple
+{
+	background-color: rgb(93,56,162);
+}
+.bg-blue
+{
+	background-color: rgb(85,166,206);
+}
+.bg-green
+{
+	background-color: rgb(144,183,89);
 }
